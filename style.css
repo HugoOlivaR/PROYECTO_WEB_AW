@@ -1,0 +1,327 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #061D3A;
+}
+
+a {
+    font-size: 35px;
+    font-family: 'Open Sans Extrabold', arial;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* SCROLL */
+
+.container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.container::-webkit-scrollbar-thumb {
+    background: #38B6FF;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.container::-webkit-scrollbar-thumb:hover {
+    background: #5CE1E6;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.container::-webkit-scrollbar-thumb:active {
+    background-color: #5CE1E6;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.container::-webkit-scrollbar-track {
+    background: #061D3A;
+    display: none;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.container::-webkit-scrollbar-track:hover,
+.container::-webkit-scrollbar-track:active {
+  background: #061D3A;
+}
+
+
+/* GRID CSS */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0%;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    height: 200px;
+    width: 100%;
+    margin: 0%;
+}
+.div2 { 
+    grid-area: 1 / 2 / 2 / 6; 
+    margin: 0%;
+}
+.div3 { 
+    grid-area: 2 / 1 / 5 / 2; 
+    margin: 0%;
+}
+.div4 { 
+    grid-area: 2 / 2 / 5 / 6; 
+    position: relative;
+}
+.div5 { 
+    grid-area: 5 / 1 / 6 / 2;
+
+    height: 200px;
+    margin: 0%;
+    text-align: center;
+    
+}
+.div6 { 
+    grid-area: 5 / 2 / 6 / 6; 
+    height: 200px;
+    margin: 0%;
+    text-align: center;
+
+}
+
+/* LOGO */
+
+.logo {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    top: -60px;
+}
+
+/* INICIO */
+
+.inicio {
+    position: relative;
+    color: #ccd6f6;
+    top: 20px;
+    font-size: 100px;
+    letter-spacing:0.1em;
+    transition: ease 0.3s;
+    width: 10%;
+    left: -15%;
+
+}
+
+.inicio:hover {
+    letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 
+                          8px 8px #38B6FF,
+                          20px 20px #000000;
+}
+
+
+
+/* BOTONES */
+
+.smir {
+    height: 100px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    padding-top: 0;
+    border: #38B6FF solid 3px;
+    border-radius: 25px;
+    transition: ease 0.3s;
+}
+
+.smir:hover {
+    box-shadow:inset 0px 0px 10px 1px #38B6FF;
+}
+
+.psmir {
+    margin: 0%;
+    padding-top: 30px;
+    color: #5CE1E6;
+}
+
+.dam {
+    height: 100px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 20%;
+    padding-top: 0;
+    border: #38B6FF solid 3px;
+    border-radius: 25px;
+    transition: ease 0.3s;
+}
+
+.dam:hover {
+    box-shadow:inset 0px 0px 10px 1px #38B6FF;
+}
+
+.pdam {
+    margin: 0%;
+    padding-top: 30px;
+    color: #5CE1E6;
+}
+
+.contact {
+    height: 100px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    padding-top: 0;
+    border: #38B6FF solid 3px;
+    border-radius: 25px;
+    transition: ease 0.3s;
+}
+
+.contact:hover {
+    box-shadow:inset 0px 0px 10px 1px #38B6FF;
+}
+
+.pcontact {
+    margin: 0%;
+    padding-top: 30px;
+    color: #5CE1E6;
+}
+
+/* esquinas index */
+
+.iesqd {
+    height: 75px;
+    width: 75px;
+    margin: 10px;
+    position: absolute;
+    right: 15%;
+    top: 5%;
+}
+
+.iesqi {
+    height: 75px;
+    width: 75px;
+    margin: 10px;
+    position: absolute;
+    left: 15%; 
+    bottom: -5%;
+}
+
+/* CONTENIDO */
+
+.ttexto {
+    font-size: 20px;
+    font-family: 'Open Sans Extrabold', arial;
+    text-decoration: none;
+    color: #717c98;
+    margin: 0;
+    text-align: justify;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: 'Open Sans Extrabold', arial;
+    text-decoration: none;
+    color: inherit;
+}
+
+.texto {
+    height: 60%;
+    width: 60%;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    margin: 0;
+}
+
+.sobre_mi {
+    color: #ccd6f6;
+    width: 60%;
+    position: relative;
+    top: 10%;
+    left: 20%;
+}
+
+/* SOCIALS */
+
+.socials {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 50px;
+    width: 166.7px;
+    transition: ease 0.5s;
+    margin-top: 60px;
+}
+
+
+/* REDES */
+
+
+.ig {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
+    transition: ease 0.5s;
+    margin-top: 60px;
+}
+
+.ig:hover {
+    height: 70px;
+    width: 70px;
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+.tw {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
+    transition: ease 0.5s;
+}
+
+.tw:hover {
+    height: 70px;
+    width: 70px;
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.git {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
+    transition: ease 0.5s;
+}
+
+.git:hover {
+    height: 70px;
+    width: 70px;
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
