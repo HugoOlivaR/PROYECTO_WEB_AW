@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SO</title>
+    <link rel="stylesheet" href="style_so.css">
+    <link href="https://allfont.es/allfont.css?fonts=open-sans-extrabold" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="container">
+
+    <div id="navbar">
+        <a href="index.html" id="boton"><img src="logo_png2.png" id="logo" class="logo"></a>
+    </div>
+
+    <h1 class="titulo0" id="titulo0">SO</h1>
+
+    <a href=index.html><div class="inicio" id="inicio"><p class="pinicio">INICIO</p></div></a>
+    <a href=smir.html><div class="smir" id="smir"><p class="psmir">SMIR</p></div></a>   
+    <a href=dam.html><div class="dam" id="dam"><p class="pdam">DAM</p></div></a>
+    <a href=contacto.html><div class="contact" id="contact"><p class="pcontact">CONTACT</p></div></a>
+
+
+    <div class="esqd">
+        <img src="esquina_dr.png" class="iesqd" id="iesqd">
+    </div>
+
+    <div class="titulo1">
+        <h1>Máquinas Virtuales:</h1>
+    </div>
+
+    <div class="texto1">
+        <p class="ttexto">Tengo conocimientos de cómo gestionar, crear y configurar las máquinas virtuales de Oracle VirtualBox</p>
+        <p class="ttexto">Dentro de las máquinas virtuales he instalado muchos sistemas operativos tanto de linux como de windows. Por ejemplo Kali, Ubuntu, Win7, Win10...</p>
+    </div>
+
+    <img src="vb.png" class="vb_img">
+
+    <div class="titulo2">
+        <h1>Linux</h1>
+    </div>
+
+    <div class="texto2">
+        <p class="ttexto">De linux mis mayores conocimientos se centran en Ubuntu ya que es con lo que mas he trabajado, sin embargo, también se gestionar otros tipos de distribuciones de linux</p>
+        <p class="ttexto">Para gestionar linux siempre lo he hecho desde consola, apenas he utilizado el entorno gráfico. Tengo conocimientos de cómo gestionar archivos, crear usuarios, cambiar las configuraciones de red, crear y modificar archivos, cambiar los permisos de un usuario o grupo...</p>
+    </div>
+
+    <img src="ubuntu.png" class="ubuntu_img">
+    <img src="ls.jpg" class="ls_img">
+
+    <div class="titulo3">
+        <h1>Windows:</h1>
+    </div>
+
+    <div class="texto3">
+        <p class="ttexto">De Windows he trabajado sobre todo con Windows 7 pero sé hacer prácticamente lo mismo en Windows 10, por lo que tengo conocimientos de los dos.</p>
+        <p class="ttexto">En el caso de Windows si que he trabajado más con la interfaz gráfica pero aun así tengo conocimientos de como hacer ciertas cosas con la consola. Puedo crear usuarios, gestionar un sistema de archivos, definir y cambiar la configuración de una red, instalar diversos servicios...</p>
+    </div>
+
+    <img src="windows.png" class="windows_img">
+    <img src="usuarios.jpg" class="usuarios_img">
+
+
+    <div class="esqi">
+        <img src="esquina_izq.png" class="iesqi" id="iesqi">
+    </div>
+
+    <img src="socials.png" class="socials">
+
+    <a href="https://instagram.com" target="_blank"><img src="ig.png" class="ig"></a>
+    <a href="https://twitter.com/hugoolivv" target="_blank"><img src="tw.png" class="tw"></a>
+    <a href="https://github.com/HugoOlivaR" target="_blank"><img src="git.png" class="git"></a>
+
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("logo").style.height = "15%";
+                document.getElementById("logo").style.width = "15%";
+                document.getElementById("logo").style.left = "7%";
+                document.getElementById("titulo0").style.fontSize = "50px";
+                document.getElementById("titulo0").style.left = "55%";
+                document.getElementById("titulo0").style.textShadow = "8px 8px #38B6FF, 20px 20px #000000";
+                document.getElementById("navbar").style.height = "170px";
+                document.getElementById("inicio").style.top = "20%";
+                document.getElementById("smir").style.top = "35%";
+                document.getElementById("dam").style.top = "50%";
+                document.getElementById("contact").style.top = "65%";
+                document.getElementById("iesqd").style.top = "20%";
+            } else {
+                document.getElementById("logo").style.height = "30%";
+                document.getElementById("logo").style.width = "30%";
+                document.getElementById("logo").style.left = "0%";
+                document.getElementById("titulo0").style.fontSize = "100px";
+                document.getElementById("titulo0").style.left = "53%";
+                document.getElementById("titulo0").style.textShadow = "";
+                document.getElementById("navbar").style.height = "230px";
+                document.getElementById("inicio").style.top = "40%";
+                document.getElementById("smir").style.top = "55%";
+                document.getElementById("dam").style.top = "70%";
+                document.getElementById("contact").style.top = "85%";
+                document.getElementById("iesqd").style.top = "40%";
+                document.getElementById("iesqd").style.top = "35%";
+            }
+            }
+        </script>
+
+</body>
+</html>

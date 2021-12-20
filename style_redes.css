@@ -1,0 +1,380 @@
+body { 
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans Extrabold', arial;
+    background-color: #061D3A;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #061D3A;
+  padding: 0px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  height: 230px;
+  top: 0;
+  z-index: 3;
+}
+
+a {
+    font-size: 35px;
+    font-family: 'Open Sans Extrabold', arial;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* SCROLL */
+
+.container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.container::-webkit-scrollbar-thumb {
+    background: #38B6FF;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.container::-webkit-scrollbar-thumb:hover {
+    background: #5CE1E6;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.container::-webkit-scrollbar-thumb:active {
+    background-color: #5CE1E6;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.container::-webkit-scrollbar-track {
+    background: #061D3A;
+    display: none;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.container::-webkit-scrollbar-track:hover,
+.container::-webkit-scrollbar-track:active {
+  background: #061D3A;
+}
+
+
+/* LOGO */
+
+.logo {
+    height: 30%;
+    width: 30%;
+    position: fixed;
+    left: 0%;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+/* TITULO MME */
+
+.titulo0 {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    color: #ccd6f6;
+    font-size: 100px;
+    letter-spacing:0.1em;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+/* BOTONES */
+
+.inicio {
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 6%;
+    padding-top: 0;
+    border: #38B6FF solid 3px;
+    border-radius: 25px;
+    transition: ease 0.5s;
+    z-index: 4;
+}
+
+.inicio:hover {
+    box-shadow:inset 0px 0px 10px 1px #38B6FF;
+}
+
+.pinicio {
+    margin: 0%;
+    padding-top: 30px;
+    color: #5CE1E6;
+}
+
+.smir {
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    position: fixed;
+    top: 55%;
+    left: 6%;
+    padding-top: 0;
+    border: #38B6FF solid 3px;
+    border-radius: 25px;
+    transition: ease 0.5s;
+    z-index: 4;
+}
+
+.smir:hover {
+    box-shadow:inset 0px 0px 10px 1px #38B6FF;
+}
+
+.psmir {
+    margin: 0%;
+    padding-top: 30px;
+    color: #5CE1E6;
+}
+
+.dam {
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    position: fixed;
+    top: 70%;
+    left: 6%;
+    padding-top: 0;
+    border: #38B6FF solid 3px;
+    border-radius: 25px;
+    transition: ease 0.5s;
+    z-index: 1;
+}
+
+.dam:hover {
+    box-shadow:inset 0px 0px 10px 1px #38B6FF;
+}
+
+.pdam {
+    margin: 0%;
+    padding-top: 30px;
+    color: #5CE1E6;
+}
+
+.contact {
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    position: fixed;
+    top: 85%;
+    left: 6%;
+    padding-top: 0;
+    border: #38B6FF solid 3px;
+    border-radius: 25px;
+    transition: ease 0.5s;
+    z-index: 1;
+}
+
+.contact:hover {
+    box-shadow:inset 0px 0px 10px 1px #38B6FF;
+}
+
+.pcontact {
+    margin: 0%;
+    padding-top: 30px;
+    color: #5CE1E6;
+}
+
+/* esquinas index */
+
+.iesqd {
+    height: 75px;
+    width: 75px;
+    margin: 10px;
+    position: fixed;
+    top: 35%;
+    left: 89%;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.iesqi {
+    height: 75px;
+    width: 75px;
+    margin: 10px;
+    position: absolute;
+    top: 190%;
+    left: 30%;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+/* CONTENIDO GENERAL */
+
+.ttexto {
+    font-size: 20px;
+    font-family: 'Open Sans Extrabold', arial;
+    text-decoration: none;
+    color: #717c98;
+    margin: 0;
+    text-align: justify;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: 'Open Sans Extrabold', arial;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CONTENIDO */
+
+.titulo1 {
+    color: #ccd6f6;
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+.texto1 {
+    width: 55%;
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    margin: 0;
+}
+
+.plano_img {
+    height: 60%;
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+
+.ver_mas {
+    position: absolute;
+    height: 50px;
+    width: 10%;
+    text-align: center;
+    top: 125%;
+    left: 53%;
+    padding-top: 0;
+    border: #38B6FF solid 3px;
+    border-radius: 25px;
+    transition: ease 0.5s;
+}
+
+.ver_mas:hover {
+    box-shadow:inset 0px 0px 10px 1px #38B6FF;
+    width: 15%;
+    left: 50%;
+}
+
+.p_ver_mas {
+    margin: 0%;
+    padding-top: 5px;
+    color: #5CE1E6;
+}
+
+.titulo2 {
+    color: #ccd6f6;
+    width: 40%;
+    position: absolute;
+    top: 136%;
+    left: 52%;
+}
+
+.texto2 {
+    width: 55%;
+    position: absolute;
+    top: 143%;
+    left: 34%;
+    margin: 0;
+}
+
+.packet_img {
+    height: 320px;
+    width: 856px;
+    position: absolute;
+    top: 158%;
+    left: 40%;
+}
+
+
+/* SOCIALS */
+
+.socials {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 50px;
+    width: 166.7px;
+    transition: ease 0.5s;
+    margin-top: 60px;
+    margin-left: 12%;
+    margin-bottom: 5%;
+}
+
+
+/* REDES */
+
+
+.ig {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
+    transition: ease 0.5s;
+    margin-top: 105%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+.ig:hover {
+    height: 70px;
+    width: 70px;
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+.tw {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
+    transition: ease 0.5s;
+    margin-bottom: 5%;
+}
+
+.tw:hover {
+    height: 70px;
+    width: 70px;
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.git {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
+    transition: ease 0.5s;
+    margin-bottom: 5%;
+}
+
+.git:hover {
+    height: 70px;
+    width: 70px;
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+}

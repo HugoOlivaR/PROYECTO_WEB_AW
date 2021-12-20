@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MME</title>
+    <link rel="stylesheet" href="style_mme.css">
+    <link href="https://allfont.es/allfont.css?fonts=open-sans-extrabold" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="container">
+
+    <div id="navbar">
+        <a href="index.html" id="boton"><img src="logo_png2.png" id="logo" class="logo"></a>
+    </div>
+
+    <h1 class="titulo0" id="titulo0">MME</h1>
+
+    <a href=index.html><div class="inicio" id="inicio"><p class="pinicio">INICIO</p></div></a>
+    <a href=smir.html><div class="smir" id="smir"><p class="psmir">SMIR</p></div></a>   
+    <a href=dam.html><div class="dam" id="dam"><p class="pdam">DAM</p></div></a>
+    <a href=contacto.html><div class="contact" id="contact"><p class="pcontact">CONTACT</p></div></a>
+
+
+    <div class="esqd">
+        <img src="esquina_dr.png" class="iesqd" id="iesqd">
+    </div>
+
+    <div class="titulo1">
+        <h1>Estructura del ordenador:</h1>
+    </div>
+
+    <div class="texto1">
+        <p class="ttexto">Lo primero que estudiamos fue como funcionaba un ordenador por dentro, es decir, código binario y lenguaje de ensamblador.</p>
+        <p class="ttexto">Lo siguiente fué conocer todos los componentes de un ordenador y que función tenían cada uno. De esta manera pude comprender como funcionaba un ordenador en su totalidad para montarlos y arreglarlos de la manera más óptima</p>
+    </div>
+
+    <img src="componentes.png" class="componentes_img">
+
+    <div class="titulo2">
+        <h1>Historia:</h1>
+    </div>
+
+    <img src="historia1.png" class="historia1_img">
+    <a href="historia.html" target="_blank"><p class="clickbait">CLICKEA</p></a>
+    <img src="historia2.png" class="historia2_img">
+
+    <div class="texto2">
+        <p class="ttexto">Aclarar que dimos algo de historia sobre los ordenadores, sus distintas épocas y cómo fue evolucionando a lo largo de los años</p>
+    </div>
+
+    <div class="esqi">
+        <img src="esquina_izq.png" class="iesqi" id="iesqi">
+    </div>
+
+
+    <div class="titulo3">
+        <h1>Modding</h1>
+    </div>
+
+    <div class="texto3">
+        <p class="ttexto">Como proyecto final hemos hecho un modding de un ordenador</p>
+        <p class="ttexto">Tuvimos una idea principal, la cual estuvimos llevando a cabo 3 de las 4 semanas que tuvimos para hacer el proyecto. Dicha idea consistió en diseñar e imprimir un modelo 3D con forma del personaje R2-D2, este modelo lo usamos como caja del ordenador. Cuando fuimos a imprimir el modelo hubo un problema de impresión y no nos dio tiempo, por lo que había que entregar algo rápido</p>
+        <p class="ttexto">Tuvimos escasos días para hacer algo completamente distinto, se nos ocurrió la idea de hacer un museo del ordenador en miniatura con figuras de LEGO. Decidimos hacer esto por el poco tiempo que nos llevaría hacerlo y el escaso tiempo del que disponíamos.</p>
+    </div>
+
+    <video src="Proyecto.mp4" class="video" poster="logo.png" controls style="width: 560px; height: 315px;"></video>
+
+    <img src="socials.png" class="socials">
+
+    <a href="https://instagram.com" target="_blank"><img src="ig.png" class="ig"></a>
+    <a href="https://twitter.com/hugoolivv" target="_blank"><img src="tw.png" class="tw"></a>
+    <a href="https://github.com/HugoOlivaR" target="_blank"><img src="git.png" class="git"></a>
+
+
+    <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("logo").style.height = "15%";
+            document.getElementById("logo").style.width = "15%";
+            document.getElementById("logo").style.left = "7%";
+            document.getElementById("titulo0").style.fontSize = "50px";
+            document.getElementById("titulo0").style.left = "55%";
+            document.getElementById("titulo0").style.textShadow = "8px 8px #38B6FF, 20px 20px #000000";
+            document.getElementById("navbar").style.height = "170px";
+            document.getElementById("inicio").style.top = "20%";
+            document.getElementById("smir").style.top = "35%";
+            document.getElementById("dam").style.top = "50%";
+            document.getElementById("contact").style.top = "65%";
+            document.getElementById("iesqd").style.top = "20%";
+        } else {
+            document.getElementById("logo").style.height = "30%";
+            document.getElementById("logo").style.width = "30%";
+            document.getElementById("logo").style.left = "0%";
+            document.getElementById("titulo0").style.fontSize = "100px";
+            document.getElementById("titulo0").style.left = "53%";
+            document.getElementById("titulo0").style.textShadow = "";
+            document.getElementById("navbar").style.height = "230px";
+            document.getElementById("inicio").style.top = "40%";
+            document.getElementById("smir").style.top = "55%";
+            document.getElementById("dam").style.top = "70%";
+            document.getElementById("contact").style.top = "85%";
+            document.getElementById("iesqd").style.top = "40%";
+            document.getElementById("iesqd").style.top = "35%";
+        }
+        }
+    </script>
+
+</body>
+</html>

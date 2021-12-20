@@ -1,0 +1,42 @@
+body { 
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans Extrabold', arial;
+    background-image: url("fondodam.png");
+}
+
+/* FLECHA */
+
+.flecha {
+    position: absolute;
+    z-index: 2;
+    height: 50px;
+    width: 66px;
+    top: 2%;
+    left: 2%;
+    transition: ease 0.3s;
+}
+
+.flecha:hover {
+    height: 60px;
+    width: 75px;
+    left: 1%;
+}
+
+/* TEXTO */
+
+.texto {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 100px;
+    letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 
+                          8px 8px #38B6FF,
+                          20px 20px #000000;
+}

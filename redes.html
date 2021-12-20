@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes</title>
+    <link rel="stylesheet" href="style_redes.css">
+    <link href="https://allfont.es/allfont.css?fonts=open-sans-extrabold" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="container">
+
+    <div id="navbar">
+        <a href="index.html" id="boton"><img src="logo_png2.png" id="logo" class="logo"></a>
+    </div>
+
+    <h1 class="titulo0" id="titulo0">Redes</h1>
+
+    <a href=index.html><div class="inicio" id="inicio"><p class="pinicio">INICIO</p></div></a>
+    <a href=smir.html><div class="smir" id="smir"><p class="psmir">SMIR</p></div></a>   
+    <a href=dam.html><div class="dam" id="dam"><p class="pdam">DAM</p></div></a>
+    <a href=contacto.html><div class="contact" id="contact"><p class="pcontact">CONTACT</p></div></a>
+
+
+    <div class="esqd">
+        <img src="esquina_dr.png" class="iesqd" id="iesqd">
+    </div>
+
+    <div class="titulo1">
+        <h1>Diseño de redes:</h1>
+    </div>
+
+    <div class="texto1">
+        <p class="ttexto">Puedo generar un plano de una red simple de una oficina como la siguiente. Además de gestionar los costes y montar dicha red.</p>
+    </div>
+
+    <img src="plano.jpg" class="plano_img">
+
+    <a href=https://docs.google.com/document/d/1n_v_Qrnq4VyxAEaGSTW1I5qsXvGMLAYMuxIYiSC0ti4/edit?usp=sharing target="_blank"><div class="ver_mas" id="smir"><p class="p_ver_mas">VER MAS</p></div></a>
+
+    
+
+    <div class="titulo2">
+        <h1>Packet Tracer:</h1>
+    </div>
+
+    <div class="texto2">
+        <p class="ttexto">Tengo varias redes creadas en packet tracer, con uno o más routers, switches, nodos, hubs...</p>
+        <p class="ttexto">Puedo configurarlas para que funcionen perfectamente y los equipos dentro de la red puedan acceder a internet o comunicarse entre ellos. Esto para después crear un plano de una oficina y pasar esta red a la realidad.</p>
+    </div>
+
+    <img src="packet.jpg" class="packet_img">
+
+
+    <div class="esqi">
+        <img src="esquina_izq.png" class="iesqi" id="iesqi">
+    </div>
+
+    <img src="socials.png" class="socials">
+
+    <a href="https://instagram.com" target="_blank"><img src="ig.png" class="ig"></a>
+    <a href="https://twitter.com/hugoolivv" target="_blank"><img src="tw.png" class="tw"></a>
+    <a href="https://github.com/HugoOlivaR" target="_blank"><img src="git.png" class="git"></a>
+
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("logo").style.height = "15%";
+                document.getElementById("logo").style.width = "15%";
+                document.getElementById("logo").style.left = "7%";
+                document.getElementById("titulo0").style.fontSize = "50px";
+                document.getElementById("titulo0").style.left = "55%";
+                document.getElementById("titulo0").style.textShadow = "8px 8px #38B6FF, 20px 20px #000000";
+                document.getElementById("navbar").style.height = "170px";
+                document.getElementById("inicio").style.top = "20%";
+                document.getElementById("smir").style.top = "35%";
+                document.getElementById("dam").style.top = "50%";
+                document.getElementById("contact").style.top = "65%";
+                document.getElementById("iesqd").style.top = "20%";
+            } else {
+                document.getElementById("logo").style.height = "30%";
+                document.getElementById("logo").style.width = "30%";
+                document.getElementById("logo").style.left = "0%";
+                document.getElementById("titulo0").style.fontSize = "100px";
+                document.getElementById("titulo0").style.left = "53%";
+                document.getElementById("titulo0").style.textShadow = "";
+                document.getElementById("navbar").style.height = "230px";
+                document.getElementById("inicio").style.top = "40%";
+                document.getElementById("smir").style.top = "55%";
+                document.getElementById("dam").style.top = "70%";
+                document.getElementById("contact").style.top = "85%";
+                document.getElementById("iesqd").style.top = "40%";
+                document.getElementById("iesqd").style.top = "35%";
+            }
+            }
+        </script>
+
+</body>
+</html>

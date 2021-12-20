@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AW</title>
+    <link rel="stylesheet" href="style_aw.css">
+    <link href="https://allfont.es/allfont.css?fonts=open-sans-extrabold" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="container">
+
+    <div id="navbar">
+        <a href="index.html" id="boton"><img src="logo_png2.png" id="logo" class="logo"></a>
+    </div>
+
+    <h1 class="titulo0" id="titulo0">AW</h1>
+
+    <a href=index.html><div class="inicio" id="inicio"><p class="pinicio">INICIO</p></div></a>
+    <a href=smir.html><div class="smir" id="smir"><p class="psmir">SMIR</p></div></a>   
+    <a href=dam.html><div class="dam" id="dam"><p class="pdam">DAM</p></div></a>
+    <a href=contacto.html><div class="contact" id="contact"><p class="pcontact">CONTACT</p></div></a>
+
+
+    <div class="esqd">
+        <img src="esquina_dr.png" class="iesqd" id="iesqd">
+    </div>
+
+    <div class="titulo1">
+        <h1>HTML:</h1>
+    </div>
+
+    <div class="texto2">
+        <p class="ttexto">Después de aprender lo necesario de HTML ya era hora de ponerle un poco de estilo.</p>
+        <p class="ttexto">Tengo conocimiento suficiente como para personalizar una página a gusto del cliente, añadir transiciones, añadir la clase hover a cualquier elemento...</p>
+    </div>
+
+    <img src="html.png" class="html_img">
+
+    <div class="titulo2">
+        <h1>CSS:</h1>
+    </div>
+
+    <div class="texto1">
+        <p class="ttexto">He empezado estudiando las bases del diseño web aprendiendo lo básico de HTML.</p>
+        <p class="ttexto">Tengo conocimientos de prácticamente todas las necesarias para hacer una web como esta misma, con formularios, videos, imágenes...</p>
+    </div>
+
+    <img src="css.png" class="css_img">
+
+    <div class="titulo3">
+        <h1>JavaScript:</h1>
+    </div>
+
+    <div class="texto3">
+        <p class="ttexto">Después de aprender todo lo relacionado con el diseño de la web aprendimos a darle un poco de dinamismo a esta.</p>
+        <p class="ttexto">De JavaScript sé las cosas más básicas, alertas, prompt, funciones, variables, etc. Con los conocimientos que tengo puedo hacer, por ejemplo, esta calculadora:</p>
+    </div>
+
+    <img src="js.png" class="js_img">
+
+    <div class="calculadora">
+        <label id="pantalla">0</label>
+        <br>
+        <br>
+        <button onclick="pulsar('0')">0</button>
+        <button onclick="pulsar('1')">1</button>
+        <button onclick="pulsar('2')">2</button>
+        <br>
+        <button onclick="pulsar('3')">3</button>
+        <button onclick="pulsar('4')">4</button>
+        <button onclick="pulsar('5')">5</button>
+        <br>
+        <button onclick="pulsar('6')">6</button>
+        <button onclick="pulsar('7')">7</button>
+        <button onclick="pulsar('8')">8</button>
+        <br>
+        <button onclick="pulsar('9')">9</button>
+        <button onclick="pulsar('sumar')">+</button>
+        <button onclick="pulsar('resta')">-</button>
+        <br>
+        <button onclick="pulsar('mult')">*</button>
+        <button onclick="pulsar('divi')">%</button>
+        <button onclick="pulsar('resultado')">=</button>
+    </div>
+
+    <div class="esqi">
+        <img src="esquina_izq.png" class="iesqi" id="iesqi">
+    </div>
+
+    <img src="socials.png" class="socials">
+
+    <a href="https://instagram.com" target="_blank"><img src="ig.png" class="ig"></a>
+    <a href="https://twitter.com/hugoolivv" target="_blank"><img src="tw.png" class="tw"></a>
+    <a href="https://github.com/HugoOlivaR" target="_blank"><img src="git.png" class="git"></a>
+
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("logo").style.height = "15%";
+                document.getElementById("logo").style.width = "15%";
+                document.getElementById("logo").style.left = "7%";
+                document.getElementById("titulo0").style.fontSize = "50px";
+                document.getElementById("titulo0").style.left = "55%";
+                document.getElementById("titulo0").style.textShadow = "8px 8px #38B6FF, 20px 20px #000000";
+                document.getElementById("navbar").style.height = "170px";
+                document.getElementById("inicio").style.top = "20%";
+                document.getElementById("smir").style.top = "35%";
+                document.getElementById("dam").style.top = "50%";
+                document.getElementById("contact").style.top = "65%";
+                document.getElementById("iesqd").style.top = "20%";
+            } else {
+                document.getElementById("logo").style.height = "30%";
+                document.getElementById("logo").style.width = "30%";
+                document.getElementById("logo").style.left = "0%";
+                document.getElementById("titulo0").style.fontSize = "100px";
+                document.getElementById("titulo0").style.left = "53%";
+                document.getElementById("titulo0").style.textShadow = "";
+                document.getElementById("navbar").style.height = "230px";
+                document.getElementById("inicio").style.top = "40%";
+                document.getElementById("smir").style.top = "55%";
+                document.getElementById("dam").style.top = "70%";
+                document.getElementById("contact").style.top = "85%";
+                document.getElementById("iesqd").style.top = "40%";
+                document.getElementById("iesqd").style.top = "35%";
+            }
+        }
+    
+        var operando1 = '';
+        var operacion = '';
+        var operando2 = '';
+
+        var pulsar = function (num){
+           
+            if (num == 'resultado'){
+                var resultado_final = '';
+
+                if (operacion == 'sumar'){
+                    resultado_final = sumar (operando1, operando2);
+                }
+
+                else if (operacion == 'resta'){
+                    resultado_final = resta (operando1, operando2);
+                }
+
+                else if (operacion == 'mult'){
+                    resultado_final = mult (operando1, operando2);
+                }
+
+                else if (operacion == 'divi'){
+                    resultado_final = divi (operando1, operando2);
+                }
+
+                document.getElementById('pantalla').innerHTML = resultado_final;
+
+            } else if (num == 'sumar') {
+                document.getElementById('pantalla').innerHTML = '';
+                operacion = 'sumar'; // num
+
+            } else if (num == 'mult'){
+                document.getElementById('pantalla').innerHTML = '';
+                operacion = 'mult'; // num
+            } else if (num == 'resta'){
+                document.getElementById('pantalla').innerHTML = '';
+                operacion = 'resta'; // num
+            }else if (num == 'divi'){
+                document.getElementById('pantalla').innerHTML = '';
+                operacion = 'divi'; // num
+            } else if (operacion == '') {
+                operando1 = operando1 + num;
+                document.getElementById('pantalla').innerHTML = operando1;
+               
+            } else if (operacion == 'sumar'|| operacion =='mult' || operacion == 'resta' || operacion == 'divi') {
+                operando2 = operando2 + num;
+                document.getElementById('pantalla').innerHTML = operando2;
+            }
+
+        }
+
+        var sumar = function (operando1, operando2) {
+            return Number(operando1) + Number(operando2);
+
+        }
+
+        var mult = function (operando1, operando2) {            
+            return Number(operando1) * Number(operando2);
+
+        }
+
+        var resta = function (operando1, operando2) {            
+            return Number(operando1) - Number(operando2);
+
+        }
+
+        var divi = function (operando1, operando2) {            
+            return Number(operando1) / Number(operando2);
+
+        }
+    
+
+
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #061D3A;
+}
+
+/* GRID CSS */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-image: url("hw.png");
+    background-size: 100%;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    box-shadow:inset 0px 0px 1px 3px black;
+    transition: ease 0.3s;
+    filter: blur(5px);
+}
+
+.div1:hover {
+    box-shadow:inset 0px 0px 10px 5px #061D3A;
+    background-size: 110%;
+    filter: blur(0px);
+    
+}
+
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    background-image: url("aw.jpg");
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+    box-shadow:inset -2px 0px 1px 3px black;
+    transition: ease 0.3s;
+    filter: blur(5px);
+}
+
+.div2:hover {
+    box-shadow:inset 0px 0px 10px 5px #061D3A;
+    background-size: 110%;
+    filter: blur(0px);
+}
+
+.div3 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url("so.jpg");
+    background-size: 100%;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    bottom: 0;
+    box-shadow:inset 0px -2px 1px 3px black;
+    transition: ease 0.3s;
+    filter: blur(5px);
+}
+
+.div3:hover {
+    box-shadow:inset 0px 0px 10px 5px #061D3A;
+    background-size: 110%;
+    filter: blur(0px);
+}
+
+.div4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-image: url("redes.jpg");
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 50%;
+    width: 50%;
+    box-shadow:inset -2px -2px 1px 3px black;
+    transition: ease 0.3s;
+    filter: blur(5px);
+}
+
+.div4:hover {
+    box-shadow:inset 0px 0px 10px 5px #061D3A;
+    background-size: 110%;
+    filter: blur(0px);
+}
+
+
+/* SCROLL */
+
+.container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.container::-webkit-scrollbar-thumb {
+    background: #38B6FF;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.container::-webkit-scrollbar-thumb:hover {
+    background: #5CE1E6;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.container::-webkit-scrollbar-thumb:active {
+    background-color: #5CE1E6;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.container::-webkit-scrollbar-track {
+    background: #061D3A;
+    display: none;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.container::-webkit-scrollbar-track:hover,
+.container::-webkit-scrollbar-track:active {
+  background: #061D3A;
+}
+
+/* TEXTOS */
+
+.mme {
+    font-size: 50px;
+    font-family: 'Open Sans Extrabold', arial;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    color: #38B6FF;
+    -webkit-text-stroke: 1px black;
+}
+
+.mmelargo {
+    font-size: 30px;
+    font-family: 'Open Sans Extrabold', arial;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    color: #5CE1E6;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 5px 5px black;
+}
+
+.aw {
+    font-size: 50px;
+    font-family: 'Open Sans Extrabold', arial;
+    position: absolute;
+    top: 20%;
+    right: 23%;
+    color: #38B6FF;
+    -webkit-text-stroke: 1px black;
+}
+
+.awlargo {
+    font-size: 30px;
+    font-family: 'Open Sans Extrabold', arial;
+    position: absolute;
+    top: 60%;
+    left: 37%;
+    color: #5CE1E6;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 5px 5px black;
+}
+
+.so {
+    font-size: 50px;
+    font-family: 'Open Sans Extrabold', arial;
+    position: absolute;
+    bottom: 20%;
+    left: 21%;
+    color: #38B6FF;
+    -webkit-text-stroke: 1px black;
+}
+
+.solargo {
+    font-size: 30px;
+    font-family: 'Open Sans Extrabold', arial;
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    color: #5CE1E6;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 5px 5px black;
+}
+
+.redes {
+    font-size: 50px;
+    font-family: 'Open Sans Extrabold', arial;
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    color: #38B6FF;
+    -webkit-text-stroke: 1px black;
+}
+
+.redeslargo {
+    font-size: 30px;
+    font-family: 'Open Sans Extrabold', arial;
+    position: absolute;
+    top: 60%;
+    left: 32%;
+    color: #5CE1E6;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 5px 5px black;
+}
+
+/* FLECHA */
+
+.flecha {
+    position: absolute;
+    z-index: 2;
+    height: 50px;
+    width: 66px;
+    top: 2%;
+    left: 2%;
+    transition: ease 0.3s;
+}
+
+.flecha:hover {
+    height: 60px;
+    width: 75px;
+    left: 1%;
+}

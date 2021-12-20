@@ -1,0 +1,11 @@
+// LOGO
+- 061D3A
+- 5CE1E6
+- 38B6FF
+
+// FONDO
+- 061D3A
+
+// TEXTO
+- 717c98
+- ccd6f6
